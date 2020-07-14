@@ -5,7 +5,9 @@
       <div data-uid="_uid" class="app-projects-edit">
         <div class="app-top-container top-row">
           <div class="b-center">
-            <button type="button" class="btn btn-light-grey">Назад</button>
+            <nuxt-link :to="{path: '/'}">
+              <button type="button" class="btn btn-light-grey">Назад</button>
+            </nuxt-link>
           </div>
         </div>
         <div class="b-page-content">

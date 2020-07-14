@@ -11,9 +11,8 @@
           </div>
         </div>
         <div class="b-projects">
-          <nuxt-link :to="{name: 'project-edit-id', params: { id:project.id } }" v-for="project in projects"
-                     :key="project.id">
-            <div class="b-project-box js-center-col">
+          <div class="b-project-box js-center-col" v-for="project in projects"
+                 :key="project.id" @click="$router.push('/project-edit/'+project.id)">
               <div class="b-project-content">
                 <div class="b-logo">
                   <div class="b-avatar">
@@ -54,7 +53,6 @@
               </div>
 
             </div>
-          </nuxt-link>
         </div>
       </div>
     </section>
